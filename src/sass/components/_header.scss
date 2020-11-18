@@ -5,7 +5,7 @@ header {
       rgba(0, 0, 0, 0.56)
     ),
     url(../images/header-bg.jpg);
-  min-height: 230px;
+  height: 230px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -16,12 +16,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 41px;
+  margin-top: 41px;
   margin-bottom: 37px;
 }
 .logo {
   display: flex;
   align-items: center;
+  margin-top: 40px;
 }
 .logo img {
   margin-right: 12px;
@@ -43,6 +44,7 @@ header {
   font-size: 12px;
   line-height: 1.2;
   font-weight: 500;
+  margin-top: 60px;
 }
 .pages-list > li:not(:last-child) {
   margin-right: 39px;

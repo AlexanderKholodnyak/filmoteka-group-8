@@ -13,3 +13,45 @@ img {
   max-width: 100%;
   height: auto;
 }
+.my-library-header {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.56),
+      rgba(0, 0, 0, 0.56)
+    ),
+    url(../images/my-library-bg.jpg);
+  min-height: 230px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  // color: $primary-white-color;
+  color: #fff;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-button {
+  display: block;
+  padding: 14px 38px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 136px;
+  height: 44px;
+  color: #fff;
+}
+
+.button-watched {
+  background-color: #ff6b01;
+}
+.button-queue {
+  background-color: rgba(0, 0, 0, 0.56);
+  border-color: #fff;
+}
+.filter-list > .item + .item {
+  //mobile margin-left 20px
+
+  margin-left: 15px;
+}
