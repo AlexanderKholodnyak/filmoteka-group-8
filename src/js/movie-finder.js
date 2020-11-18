@@ -1,37 +1,26 @@
 import MoviesApiService from './apiService';
+import movieTpl from '../templates/movie-card.hbs';
 
 const refs = {
   body: document.querySelector('body'),
   form: document.querySelector('#search-form'),
-  imagesContainer: document.querySelector('.gallery'),
+  moviesContainer: document.querySelector('.js-cards-markup'),
 };
 const moviesApiService = new MoviesApiService();
 
-refs.form.addEventListener('input', onSearch);
+// refs.form.addEventListener('input', onSearch);
 
-function onSearch(e) {
-  //   clearImagesContainer();
-
-  moviesApiService.query = e.target.value;
-
-  if (moviesApiService.query === '') {
-    return;
-  }
-
-  moviesApiService.resetPage();
-
-  getMovies();
-}
+getMovies();
 
 function getMovies() {
   moviesApiService.fetchMovies().then(movies => {
     console.log(movies);
-    // appendMoviesMarkup(movies);
+    appendMoviesMarkup(movies);
   });
 }
 
-function appendImagesMarkup(image) {
-  refs.imagesContainer.insertAdjacentHTML('beforeend', imageTpl(image));
+function appendMoviesMarkup(movie) {
+  refs.moviesContainer.insertAdjacentHTML('beforeend', movieTpl(movie));
 }
 
 function clearImagesContainer() {

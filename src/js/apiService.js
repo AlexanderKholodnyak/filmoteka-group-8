@@ -11,10 +11,10 @@ export default class MoviesApiService {
     const url = `${BASE_URL}movie/popular/?api_key=${API_KEY}`;
     const response = await fetch(url);
     const movies = await response.json();
-
+    const { results } = movies;
     this.incrementPage();
-    console.log(movies);
-    return movies;
+    console.log(results);
+    return results;
   }
 
   incrementPage() {

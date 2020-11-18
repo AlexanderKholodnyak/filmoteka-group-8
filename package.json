@@ -4,7 +4,7 @@
   "description": "filmoteka",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/*.html --no-source-maps",
     "build": "parcel build src/*.html",
     "predeploy": "npm run build -- --public-url /filmoteka-group-8/",
     "deploy": "gh-pages -d dist"
