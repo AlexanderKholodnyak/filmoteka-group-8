@@ -3,18 +3,41 @@
         <div class="container content">
             <h1 class="visually-hidden">Секция фильмов</h1>
             <ul class="js-cards-markup">
-                <!-- <li>
+               
+                <!-- <li class="film-list-item item">
                     <a href="" class="card-link">
+                    <img class="film-image" src="{{poster_path}}" alt="{{original_title}}" />
+                    <div class="descr">
+                        <h2 class="film-name">{{original_title}}</h2>
+                        <p class="film-genre">   
+                            {{#each genres}}
+                            {{this.name}}
+                            {{/each}}&#10072; <span class="film-year"> {{release_date}}</span></p>
+                        <div class="film-rate">{{vote_average}}</div>
+                    </div>
+                    </a>
+                </li> -->
+
+                <li class="film-list-item item">
+                    <a href="" class="card-link">
+                    <img class="film-image" src="./images/header-bg.jpg" alt="original_title" />
+                    <div class="descr">
+                        <h2 class="film-name">Aquarela</h2>
+                        <p class="film-genre">   
+                            Action &#10072; <span class="film-year"> 2020</span></p>
+                        <div class="film-rate">6.4</div>
+                    </div>
+                    </a>
+                </li>
+                <!-- <li>
+                <a href="" class="card-link">
                         <img src="./images/header-bg.jpg" alt="картинка фильма">
                         <div class="descr">
                             <h2 class="film-name">ghfgh</h2>
-                            <ul>
-                                <li class="film-genre">fgfth | </li>
-                                <li class="film-year">2020</li>
-                            </ul>
+                         <p><span class="film-genre">fgfth |</span><span class="film-year">>2020</span></p>     
                         </div>
-                    </a>
-                </li> -->
+                    </a> 
+               </li> -->
 
             </ul>
         </div>

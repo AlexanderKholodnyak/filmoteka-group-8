@@ -8,7 +8,7 @@ export default class ImagesApiService {
   }
 
   async fetchImages() {
-    const url = `${BASE_URL}550/?api_key=${API_KEY}`;
+    const url = `${BASE_URL}movie/popular/?api_key=${API_KEY}`;;
     const response = await fetch(url);
     const movies = await response.json();
 
