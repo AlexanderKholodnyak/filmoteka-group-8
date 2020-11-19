@@ -13,13 +13,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+<<<<<<< Updated upstream
 .my-library-header {
+=======
+
+.my-library-header{
+>>>>>>> Stashed changes
   background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.56),
       rgba(0, 0, 0, 0.56)
     ),
+<<<<<<< Updated upstream
     url(../images/my-library-bg.jpg);
+=======
+  url(../images/my-library-bg.jpg);
+>>>>>>> Stashed changes
   min-height: 230px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -28,18 +37,27 @@ img {
   color: #fff;
 }
 
+<<<<<<< Updated upstream
 .filter-list {
+=======
+.filter-list{
+>>>>>>> Stashed changes
   display: flex;
   align-items: center;
   justify-content: center;
 }
+<<<<<<< Updated upstream
 .filter-button {
+=======
+.filter-button{
+>>>>>>> Stashed changes
   display: block;
   padding: 14px 38px;
   border-radius: 5px;
   text-transform: uppercase;
   width: 136px;
   height: 44px;
+<<<<<<< Updated upstream
   color: #fff;
 }
 
@@ -55,3 +73,19 @@ img {
 
   margin-left: 15px;
 }
+=======
+}
+
+.button-watched{
+  background-color: #FF6B01;
+  color: #fff;
+  }
+.button-queue{
+  
+}
+.filter-list>.item+.item{
+//mobile margin-left 20px
+
+margin-left: 15px;
+}
+>>>>>>> Stashed changes
